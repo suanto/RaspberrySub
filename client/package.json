@@ -1,0 +1,44 @@
+{
+  "name": "rov-client",
+  "version": "0.0.1",
+  "description": "Rov client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suanto/Moki-ROV2.git"
+  },
+  "author": {
+    "name": "Antti Suanto"
+  },
+  "scripts": {
+    "version": "tsc -v",
+    "compile": "tsc -p .",
+    "build": "webpack",
+    "build:prod": "webpack --env prod",
+    "package": "npm run build:prod",
+    "clean": "rm -rf dist",
+    "clean-node": "rm -rf node_modules",
+    "lint": "eslint . --ext .ts,.tsx",
+    "dev": "webpack serve --config webpack.config.js",
+    "copy": "copyfiles -f dist/* ../server/dist/client/ && copyfiles -f static_files/* ../server/dist/client/static_files"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/socket.io-client": "^1.4.35",
+    "@types/webpack-dev-server": "^3.11.1",
+    "copyfiles": "^2.4.1",
+    "css-loader": "^5.1.0",
+    "socket.io-client": "^3.1.2",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@types/dom-mediacapture-record": "^1.0.7",
+    "@types/lodash": "^4.14.168",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
+  }
+}

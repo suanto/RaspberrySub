@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ROV</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id ="container">
+      <div class="firstCamDiv camdiv">
+        <canvas id="firstCamCanvas"></canvas> 
+        <button type="button" class="start">Start</button>
+        <button type="button" class="stop">Stopped</button>
+        <button type="button" class="download">Download</button>
+        <input type="text" id="mission" value="Dive"></input>
+        <button type="button" class="reboot">Reboot the sub</button>
+        <button type="button" class="shutdown">Shutdown the sub</button>
+        <button type="button" class="keyboard-enabled">Enable keyboard</button>
+        <button type="button" class="leds">Leds</button>
+      </div>
+      <div class="secondCamDiv camdiv">
+        <canvas id="secondCamCanvas"></canvas> 
+        <button type="button" class="start">Start</button>
+        <button type="button" class="stop">Stopped</button>
+        <button type="button" class="download">Download</button>
+        <button type="button" class="reboot">Reboot the sub</button>
+        <button type="button" class="shutdown">Shutdown the sub</button>
+        <button type="button" class="keyboard-enabled">Enable keyboard</button>
+        <button type="button" class="leds">Leds</button>
+      </div>
+      <div class="thirdCamDiv camdiv">
+        <canvas id="thirdCamCanvas"></canvas> 
+        <button type="button" class="start">Start</button>
+        <button type="button" class="stop">Stopped</button>
+        <button type="button" class="download">Download</button>
+        <button type="button" class="reboot">Reboot the sub</button>
+        <button type="button" class="shutdown">Shutdown the sub</button>
+        <button type="button" class="keyboard-enabled">Enable keyboard</button>
+        <button type="button" class="leds">Leds</button> 
+      </div>
+    </div>
+
+    <a href="controls.html" target="_blank">How to control?</a>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io.min.js"></script>
+    <script src="/client.js"></script>
+  </body>  
+</html>
+
